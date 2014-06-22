@@ -65,9 +65,26 @@ a:hover { text-decoration: underline; }
 ins, a { text-decoration: none; }
 u, .lotus-u { text-decoration: underline; }
 mark { background: #FFFB99; }
+/*
 pre, code { font-family: "Courier New", Courier, monospace; overflow-x: auto; vertical-align: middle; }
 pre { font-size: 12px; border: 1px solid #d8d8d8; border-left-width: 0.4em;  background: rgba(214, 214, 214, 0.5); padding: 10px; }
 code { color: #4d4d4d; background: rgba(214, 214, 214, 0.5); padding: 0 0.2em; border: 1px solid #bdbdbd; border-radius: 2px 2px; vertical-align:top;}
+code, pre {
+  font-family: Monaco,"DejaVu Sans Mono","Courier New",monospace;
+}*/
+code, pre {
+  color: #FEFEFE;
+  background: #CC0033;
+  white-space: pre;
+  line-height: 110%;
+  font-size: 16px;
+  font-family: "Ubuntu",monospace;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+time {
+    font-family: "Ubuntu",monospace;
+}
+
 small { font-size: 12px; color: #888; }
 
 ::selection 	 	{background: rgba(0, 0, 0, 0.1);}
@@ -426,7 +443,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 
 .lotus h1, .lotus h2, .lotus h3, .lotus h4, .lotus h5, .lotus h6,
-.lotus-h1, .lotus-h2, .lotus-h3, .lotus-h4, .lotus-h5, .lotus-h6 { margin-bottom: 0.4em; line-height: 1.5;}
+.lotus-h1, .lotus-h2, .lotus-h3, .lotus-h4, .lotus-h5, .lotus-h6 { /*margin-bottom: 0.4em; line-height: 1.5;*/}
 .lotus h1, .lotus-h1 { font-size: 1.8em; }
 .lotus h2, .lotus-h2 { font-size: 1.6em; }
 .lotus h3, .lotus-h3 { font-size: 1.4em; border-bottom: 1px dotted #d8d8d8; margin-top: 1.4em;}
@@ -434,7 +451,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 .lotus h4, .lotus-h4 { font-size: 1.2em; }
 .lotus h5, .lotus h6, .lotus-h5, .lotus-h6 { font-size: 1em; }
 .lotus .lotus-break { line-height:  18px; font-size: 14px; font-style: italic; font-weight: 400; border-bottom: 1px dotted #e8e8e8; color: #898989; }
-.lotus .lotus-pagetit { padding-bottom: 0.5em; margin-bottom: 0.5em; border-bottom: 1px solid #C5C5C5; }
+.lotus .lotus-pagetit { font-size: 99px; /*padding-bottom: 0.5em; margin-bottom: 0.5em; border-bottom: 1px solid #C5C5C5; */}
 .lotus .lotus-tagline { color: #888; font-size: 13px; margin: 0 0 1.2em; font-weight: 400; }
 .lotus .lotus-tagline .lotus-tagline-catg { margin-left: 1em; }
 .lotus ul, .lotus-ul { margin-left: 1.3em; list-style: disc; }
@@ -478,7 +495,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 .lotus-nav ul li { height: 42px; display: block; font-size: 20px; line-height: 42px; text-align: center; border-top: 1px solid #313131; overflow: hidden; }
 .lotus-nav ul .home { margin-bottom: 3.8em; border-top: 0; }
 .lotus-nav ul li a { color: #ffffff; display: block; cursor: pointer; }
-.lotus-nav ul li a:hover, .lotus-nav ul .current a { text-decoration: none; 
+.lotus-nav ul li a:hover, .lotus-nav ul .current a { text-decoration: none;
 	box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.8) inset;
     -moz-transition:  box-shadow .3s linear;
     -webkit-transition: box-shadow .3s linear;
@@ -487,7 +504,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 }
 .lotus-nav ul .last { position: relative; }
 .lotus-logo {
-	border-bottom: 1px solid #d0d0d0;
+	/*border-bottom: 1px solid #d0d0d0;*/
 }
 .lotus-article {
 	margin: 2em 0 2em 0;
@@ -548,7 +565,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 .lotus-pages a:hover, .lotus-pages span.current, .lotus-pages a.last:hover, .lotus-pages a.first:hover {
     height: 20px;
     line-height: 20px;
-    padding: 0 8px; 
+    padding: 0 8px;
 }
 .lotus-pages a.page:hover {
     height:20px;
@@ -557,7 +574,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
     background: #065588;
     color: #f3f2ee;
 }
-.iLight .lotus-pages a.page:hover {
+.lotus-pages a.page:hover {
     background: #9C0001;
 }
 
@@ -645,9 +662,10 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 }
 .lotus-footer {
 	margin-top: 3em;
+  color: #FFCCCC;
 }
 .lotus-footer-link a {
-	color: #f3f2ee;
+	color: #CCCC99;
 }
 .lotus-backtop {
     width: 34px;
@@ -700,16 +718,16 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 .v-petal-right-det { right: 0; height: 20px; -moz-border-radius: 0 0 20px 0; -webkit-border-radius: 0 0 20px 0; -o-border-radius: 0 0 20px 0; border-radius: 0px 0px 20px 0px; }
 
 /** violet-site **/
-.violet-site { float: left; margin: 20px 0 12px 0px; position: relative; width: 200px; color: #525252; }
-.violet-site h1, .violet-site h1 a { font-family: "Times New Roman",Times,serif; font-size: 32px; font-weight: normal; color: #525252; margin-bottom: 0;}
+.violet-site { float: left; /*margin: 20px 0 12px 0px; */position: relative; width: 200px; color: #525252; }
+.violet-site h1, .violet-site h1 a { /*font-family: "Hiragino Sans GB",Times,serif; */font-size: 99px; font-weight: bold; color: #525252; /*margin-bottom: 0;*/}
 .violet-site h1 a:hover { color: #323232; text-decoration: none; }
 .violet-site h1 span { display: inline; padding: 0px 5px 0 3px; position: relative; line-height: 12px; font-size: 10px; font-family: Verdana,Arial,Helvetica,sans-serif; color: #525252; background: #d8d8d8; border-radius: 7px 0px 7px 0; top: -23px; left: 5px; font-weight: 600;}
-.violet-site h2 { padding-top: 2px;  font-size: 14px; line-height: 14px; border-top: 1px solid #313131; }
+/*.violet-site h2 { padding-top: 2px;  font-size: 14px; line-height: 14px; border-top: 1px solid #313131; }*/
 /*************************
  * iLight
 *************************/
-.iLight { color: #080808; background: #FEFEFE; }
-.iLight .lotus-nav {
+html { color: #080808; background: #FEFEFE; }
+.lotus-nav {
     background: #f1f1ed;
 	background: -moz-linear-gradient( 180deg, #e3e3e3 0%, #f1f1ed 8%, #f1f1ed 14%, #f1f1ed 100%);
     background: -webkit-linear-gradient( 180deg, #e3e3e3 0%, #f1f1ed 8%, #f1f1ed 14%, #f1f1ed 100%);
@@ -717,11 +735,11 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
     background: linear-gradient( to 180deg, #e3e3e3 0%, #f1f1ed 8%, #f1f1ed 14%, #f1f1ed 100%);
     border-right: 1px solid #dfdfdf;
 }
-.iLight .lotus-nav ul { border-bottom: 1px solid #e3e3e3; }
-.iLight .lotus-nav ul li { border-top: 1px solid #e3e3e3; }
-.iLight .lotus-nav ul .home { border-top: 0; }
-.iLight .lotus-nav ul li a { color: #c5c5bb; }
-.iLight .lotus-nav ul li a:hover, .iLight .lotus-nav ul .current a {
+.lotus-nav ul { border-bottom: 1px solid #e3e3e3; }
+.lotus-nav ul li { border-top: 1px solid #e3e3e3; }
+.lotus-nav ul .home { border-top: 0; }
+.lotus-nav ul li a { color: #c5c5bb; }
+.lotus-nav ul li a:hover, .lotus-nav ul .current a {
     background: #CD0001;
     color: #FEFEFE;
     box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.6) inset;
@@ -730,16 +748,16 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
     transition: box-shadow .3s linear, background .3s linear, color .3s linear;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-.iLight a { color: #9C0001; }
-.iLight a:hover, .iLight a:active { color: #CD0001; }
-.iLight blockquote {
+a { color: #9C0001; }
+a:hover, a:active { color: #CD0001; }
+blockquote {
     border-color:  #d4d4d4;
     background: rgba(214, 214, 214, 0.2);
 }
-.iLight .fn-img { padding: 3px 3px; box-shadow: 0px 0px 3px #d4d4d4; background: #FEFEFE; border: 1px solid #d4d4d4; }
-.iLight .lotus-post .lotus-post-end span { background: #FEFEFE; }
-.iLight .lotus-backtop { color: #c5c5bb; }
-.iLight .violet-site h1 span {
+.fn-img { padding: 3px 3px; box-shadow: 0px 0px 3px #d4d4d4; background: #FEFEFE; border: 1px solid #d4d4d4; }
+.lotus-post .lotus-post-end span { background: #FEFEFE; }
+.lotus-backtop { color: #c5c5bb; }
+.violet-site h1 span {
     background: #f1f1ed;
 }
 
@@ -810,7 +828,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 		margin-left: 0;
 		margin-top: 2em;
 	}
-    .iLight .lotus-nav {
+    .lotus-nav {
         background: #f1f1ed;
         background: -moz-linear-gradient( 90deg, #e3e3e3 0%, #f1f1ed 8%, #f1f1ed 14%, #f1f1ed 100%);
 	    background: -webkit-linear-gradient( 90deg, #e3e3e3 0%, #f1f1ed 8%, #f1f1ed 14%, #f1f1ed 100%);
@@ -819,7 +837,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
         border-right: none;
         border-bottom: 1px solid #dfdfdf;
     }
-    .iLight .lotus-nav ul li { border-top: 0; }
+    .lotus-nav ul li { border-top: 0; }
 }
 /*
  * for print
