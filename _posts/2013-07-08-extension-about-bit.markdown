@@ -9,7 +9,8 @@ categories: BIT 树状数组 数据结构
 然而，对于我等手残党而言，为了尽可能避免使用线段树这种又长又难调的东西，学会增强BIT是十分必要的！
 
 ###基本模型-改点球段
-```cpp
+
+```
 void update(int *d, int x, int val) {
     for (; x<=n; d[x]+=val, x+=lowbit(x));
 }
@@ -20,6 +21,7 @@ int query(int *d, int x) {
     return ret;
 }
 ```
+
 树状数组的概念啊原理啊什么的都不是本文讨论的对象，因此仅献上代码，后文的几种扩展都在此基础之上。
 <!--more-->
 ###第一次修改-改段求点

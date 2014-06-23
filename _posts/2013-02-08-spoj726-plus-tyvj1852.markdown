@@ -1,0 +1,22 @@
+---
+layout: post
+title: "[spoj 726 promotion [tyvj P1852 - [HNOI2004]宠物收养所 两道treap的裸题练习"
+date: 2012-12-01 14:21
+comments: true
+categories: spoj tyvj 题解
+---
+首先是spoj的pro。这是道彻头彻尾的裸题。涉及到的操作只有插入、查最值、删除。唯一要注意的就是答案需要用long long存。不说了。
+
+[view code](http://codepad.org/MIH1sOey)
+
+然后是宠物收养所。题目描述略长，然而看下来可以发现几个人挑一个宠物可以看成一个宠物挑几个人，再加上同一时刻只会全是人或全是宠物，瞬间好做。
+
+对于每一个访问，进行如下判定：
+
+*	若树为空，直接插入；
+*	否则若树中类型与当前类型相同，插入；
+*	再否则就查找访问数据的前驱与后继，比较后计入答案、删除。
+
+[view code](http://codepad.org/z6HctmHK)
+
+有一点很奇怪就是pet这道题在COGS上交的时候怎么交都是RE，返回错误139，不知所云。。
