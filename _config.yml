@@ -8,6 +8,7 @@ safe: false
 #站点基础配置
 title: 鯨歌
 description:
+cover: http://dpic.soon.it/s/omf5thux2ld8pz5/acqua____583______________pixiv_.png
 feed: /atom.xml
 
 #菜单配置

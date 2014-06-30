@@ -26,13 +26,6 @@ Author:             展新(pizner@gmail.com)
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Code Pro');
-}
-
-@font-face {
     font-family: "FontAwesome";
     src: url('font/fontawesome-webfont.eot');
     src: url('font/fontawesome-webfont.eot?#iefix') format('eot'), url('font/fontawesome-webfont.woff') format('woff'), url('font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
@@ -92,9 +85,9 @@ pre, code {
   line-height: 20px;
   /*text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);*/
 }
-time {
+/*time {
     font-family: "Ubuntu",monospace;
-}
+}*/
 
 small { font-size: 12px; color: #888; }
 
@@ -518,6 +511,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 	/*border-bottom: 1px solid #d0d0d0;*/
 }
 .lotus-article {
+  width: 720px;
 	margin: 2em 0 2em 0;
 	border-bottom: 1px dotted #c8c8c8;
 }
@@ -729,8 +723,8 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 .v-petal-right-det { right: 0; height: 20px; -moz-border-radius: 0 0 20px 0; -webkit-border-radius: 0 0 20px 0; -o-border-radius: 0 0 20px 0; border-radius: 0px 0px 20px 0px; }
 
 /** violet-site **/
-.violet-site { float: left; /*margin: 20px 0 12px 0px; */position: relative; width: 222px; color: #525252; }
-.violet-site h1, .violet-site h1 a { font-family: "Hiragino San GB"; font-size: 99px; color: #525252; /*margin-bottom: 0;*/}
+.violet-site { width: 100%; float: left; /*margin: 20px 0 12px 0px; */position: relative; color: #525252; }
+.violet-site h1, .violet-site h1 a { text-align: center; font-family: "Hiragino San GB"; font-size: 99px; color: #525252; /*margin-bottom: 0;*/}
 .violet-site h1 a:hover { color: #323232; text-decoration: none; }
 .violet-site h1 span { display: inline; padding: 0px 5px 0 3px; position: relative; line-height: 12px; font-size: 10px; font-family: Verdana,Arial,Helvetica,sans-serif; color: #525252; background: #d8d8d8; border-radius: 7px 0px 7px 0; top: -23px; left: 5px; font-weight: 600;}
 /*.violet-site h2 { padding-top: 2px;  font-size: 14px; line-height: 14px; border-top: 1px solid #313131; }*/
