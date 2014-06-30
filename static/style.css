@@ -73,18 +73,19 @@ code { color: #4d4d4d; background: rgba(214, 214, 214, 0.5); padding: 0 0.2em; b
 code, pre {
   font-family: Monaco,"DejaVu Sans Mono","Courier New",monospace;
 }*/
-pre, code {
+pre, code, .gist {
+  line-height: 20px;
+}
+/*pre, code {
   color: #FEFEFE;
   background: #CC0033;
   overflow-x: auto;
   vertical-align: middle;
   margin:1em 0 0.6em;
-  /*font-size: 16px;*/
   white-space: pre;
   font-family: 'Source Code Pro', monospace;
   line-height: 20px;
-  /*text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);*/
-}
+}*/
 /*time {
     font-family: "Ubuntu",monospace;
 }*/
