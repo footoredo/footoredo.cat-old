@@ -775,10 +775,8 @@ blockquote {
         width: 1024px;
     }
     .lotus-post {
-        -moz-column-count: 2;
         -moz-column-gap: 3em;
         -moz-column-rule: #c8c8c8 1px dotted;
-        -webkit-column-count: 2;
         -webkit-column-gap: 3em;
         -webkit-column-rule: #c8c8c8 1px dotted;
         column-count: 2;
