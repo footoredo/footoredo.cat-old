@@ -725,7 +725,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 
 /** violet-site **/
 .violet-site { width: 100%; float: left; /*margin: 20px 0 12px 0px; */position: relative; color: #525252; }
-.violet-site h1, .violet-site h1 a { text-align: center; font-family: "Hiragino San GB"; font-size: 99px; color: #525252; /*margin-bottom: 0;*/}
+.violet-site h1, .violet-site h1 a { text-align: center; font-family: "Hiragino San GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑"; font-size: 99px; color: #525252; /*margin-bottom: 0;*/}
 .violet-site h1 a:hover { color: #323232; text-decoration: none; }
 .violet-site h1 span { display: inline; padding: 0px 5px 0 3px; position: relative; line-height: 12px; font-size: 10px; font-family: Verdana,Arial,Helvetica,sans-serif; color: #525252; background: #d8d8d8; border-radius: 7px 0px 7px 0; top: -23px; left: 5px; font-weight: 600;}
 /*.violet-site h2 { padding-top: 2px;  font-size: 14px; line-height: 14px; border-top: 1px solid #313131; }*/
