@@ -40,7 +40,7 @@ html { color: #1F0909; background: #f3f2ee; -webkit-text-size-adjust: 100%; -ms-
 body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section { margin: 0; padding: 0; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 audio, canvas, video { display: inline-block;  }
-body, button, input, select, textarea { font: 500 14px/1.8 'PT Serif', "Hiragino San GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif, sans-serif; }
+body, button, input, select, textarea { font: 500 14px/1.8 'PT Serif', "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei", sans-serif; }
 table { border-collapse: collapse; border-spacing: 0; width: 100%; }
 th { text-align: inherit; }
 fieldset, img { border: 0; }
@@ -725,7 +725,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 
 /** violet-site **/
 .violet-site { width: 100%; float: left; /*margin: 20px 0 12px 0px; */position: relative; color: #525252; }
-.violet-site h1, .violet-site h1 a { text-align: center; font-family: "Hiragino San GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑"; font-size: 99px; color: #525252; /*margin-bottom: 0;*/}
+.violet-site h1, .violet-site h1 a { text-align: center; font-family: "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei", sans-serif;  font-size: 99px; color: #525252; /*margin-bottom: 0;*/}
 .violet-site h1 a:hover { color: #323232; text-decoration: none; }
 .violet-site h1 span { display: inline; padding: 0px 5px 0 3px; position: relative; line-height: 12px; font-size: 10px; font-family: Verdana,Arial,Helvetica,sans-serif; color: #525252; background: #d8d8d8; border-radius: 7px 0px 7px 0; top: -23px; left: 5px; font-weight: 600;}
 /*.violet-site h2 { padding-top: 2px;  font-size: 14px; line-height: 14px; border-top: 1px solid #313131; }*/
