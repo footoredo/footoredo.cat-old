@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*************************
 Theme Name:         iLotus
 Author:             展新(pizner@gmail.com)
@@ -67,7 +67,7 @@ ins, a { text-decoration: none; }
 u, .lotus-u { text-decoration: underline; }
 mark { background: #FFFB99; }
 /*
-pre, code { font-family: "Courier New", Courier, monospace; overflow-x: auto; vertical-align: middle; }
+pre, code { font-family: "Consolas", monospace; overflow-x: auto; vertical-align: middle; }
 pre { font-size: 12px; border: 1px solid #d8d8d8; border-left-width: 0.4em;  background: rgba(214, 214, 214, 0.5); padding: 10px; }
 code { color: #4d4d4d; background: rgba(214, 214, 214, 0.5); padding: 0 0.2em; border: 1px solid #bdbdbd; border-radius: 2px 2px; vertical-align:top;}
 code, pre {
