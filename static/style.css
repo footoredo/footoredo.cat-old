@@ -73,6 +73,9 @@ code { color: #4d4d4d; background: rgba(214, 214, 214, 0.5); padding: 0 0.2em; b
 code, pre {
   font-family: Monaco,"DejaVu Sans Mono","Courier New",monospace;
 }*/
+pre, code {
+  font-family: "Consolas", monospace;
+}
 pre, code, .gist {
   line-height: 20px;
 }
