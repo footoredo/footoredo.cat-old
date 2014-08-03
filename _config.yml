@@ -9,7 +9,7 @@ safe: false
 #站点基础配置
 title: 鯨歌
 description:
-cover: https://31.media.tumblr.com/e1bc1650ee6dc8ef8ec6160ac2a58f5a/tumblr_n5j9dhN3zc1qfj6wko1_500.jpg
+cover: http://0.0.0.0:8080/list/SjirmMYQ
 feed: /atom.xml
 
 #菜单配置
