@@ -973,3 +973,6 @@ pre.prettyprint{
     box-shadow: 0px 4px 4px #e8e8e8;
 }
 
+.disqus_thread {
+  margin-top: 40px;
+}
