@@ -1,8 +1,9 @@
-markdown: kramdown
+﻿markdown: kramdown
 pygments: true
 highlighter: pygments
 plugins: ./_plugins
 paginate: 8
+permalink: /:title
 
 safe: false
 
