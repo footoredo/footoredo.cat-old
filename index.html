@@ -27,7 +27,7 @@ title: 鯨歌
                 {% if npost.categories contains 'SAGE' %}
                     <li><s><time datatime="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}</time>{{ npost.title }}</s></li>
                 {% else %}
-                    <li><time datatime="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}</time><a href="{{ npost.url }}" pubdate="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}" title="{{ npost.title }}" rel="bookmark">{{ npost.title }}</a></li>
+                    <li><time datatime="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}</time><a href="{{ npost.url }}" pubdate="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}" title="{{ npost.title }}" rel="bookmark">{{ npost.title }}</a><code>{{ npost.categories }}</code></li>
                 {% endif %}
             {% endfor %}
         </ul>
