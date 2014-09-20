@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 date: 2014-08-02 18:02
 title: 目录
 comments: true
-categories: 给小朋友们组的题
+categories: 给小朋友们组的题 SAGE
 ---
 |题目名称|临洮巨人|青蛙神|败屩妖|
 |-
