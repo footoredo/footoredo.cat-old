@@ -3,7 +3,7 @@ layout: post
 title: 煌煌上庠
 date: 2014-09-14 21:12
 comments: true
-categories: SAGE,北大
+categories: SAGE 北大
 ---
 
 #一
