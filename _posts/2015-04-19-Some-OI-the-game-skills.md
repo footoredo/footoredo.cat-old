@@ -21,7 +21,9 @@ $$a*b \mod n=( (a* \lfloor b/2 \rfloor \mod n)*2 + a * ( b \mod 2) ) \mod n$$
 ####1.2.一种有限制的O(1)算法
 
 设$M=\sqrt n$，$x=\lfloor b/M \rfloor$，$y=b \mod M$，那么
+
 $$a*b \mod n=( (a*x \mod n)*M + a*y ) \mod n$$
+
 与上一种差不多，优势在于复杂度O(1)，缺陷在于由于有与$\sqrt n$级别的数相乘的操作，只能做到$10^{12}$级别。
 
 ####1.3.奇怪的O(1)算法
