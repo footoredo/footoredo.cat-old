@@ -21,9 +21,7 @@ $$a*b \mod n=( (a* \lfloor b/2 \rfloor \mod n)*2 + a * ( b \mod 2) ) \mod n$$
 ####1.2.一种有限制的O(1)算法
 
 设$M=\sqrt n$，$x=\lfloor b/M \rfloor$，$y=b \mod M$，那么
-
 $$a*b \mod n=( (a*x \mod n)*M + a*y ) \mod n$$
-
 与上一种差不多，优势在于复杂度O(1)，缺陷在于由于有与$\sqrt n$级别的数相乘的操作，只能做到$10^{12}$级别。
 
 ####1.3.奇怪的O(1)算法
@@ -34,9 +32,8 @@ $$a*b \mod n=( (a*x \mod n)*M + a*y ) \mod n$$
     
 用到的原理是
 
-$$ a*b \mod n = a*b- \lfloor \frac {a*b} n \rfloor *n $$
-
-观察代码，在计算$ \lfloor \frac {a*b} n \rfloor $时采用的方法是计算$ (a/n)*b $再取整，`long double`类型精度有18位，基本没有问题。
+$$ a*b \mod n = a*b- \lfloor \frac {a*b} n \rfloor*n $$
+观察代码，在计算$\lfloor \frac {a*b} n \rfloor $时采用的方法是计算$ (a/n)*b $再取整，`long double`类型精度有18位，基本没有问题。
 
 在计算过程中利用了自然溢出。不考虑符号位的话自然溢出相当于将结果对$ 2^{64} $取模，设$ x=a*b \mod 2^{64} $，$ y=\lfloor \frac {a*b} n \rfloor \mod 2^{64} $，利用自然溢出后得到的结果为$ ans $或$ ans-2^{64} $，由于$ans<2^{64}$所以后一种是个负数。考虑计算机中有关补码的知识，$ ans-2^{64} $应是$ 2^{64}-ans $各位取反后再+1，当做65位2进制来考虑，各位取反相当于用$2^{65}-1$去减，可以得到
 $$ (2^{65}-1)-(2^{64}-ans)+1=2^{64}+ans $$
