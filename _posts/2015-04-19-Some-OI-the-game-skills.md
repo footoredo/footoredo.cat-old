@@ -15,7 +15,7 @@ Round2连浪两试把自己浪出队了。。写一点最近学会的技巧派�
 
 ####1.1.类似快速幂
 
-$a*b \mod n=( (a* \lfloor b/2 \rfloor \mod n)*2 + a * ( b \mod 2) ) \mod n$
+\[a*b \mod n=( (a* \lfloor b/2 \rfloor \mod n)*2 + a * ( b \mod 2) ) \mod n\]
 
 像快速幂那样递归非递归都可以
 
@@ -23,7 +23,7 @@ $a*b \mod n=( (a* \lfloor b/2 \rfloor \mod n)*2 + a * ( b \mod 2) ) \mod n$
 
 设$M=\sqrt n$，$x=\lfloor b/M \rfloor$，$y=b \mod M$，那么
 
-$a*b \mod n=( (a*x \mod n)*M + a*y ) \mod n$
+\[a*b \mod n=( (a*x \mod n)*M + a*y ) \mod n\]
 
 与上一种差不多，优势在于复杂度O(1)，缺陷在于由于有与$\sqrt n$级别的数相乘的操作，只能做到$10^{12}$级别。
 
@@ -35,7 +35,7 @@ $a*b \mod n=( (a*x \mod n)*M + a*y ) \mod n$
     
 用到的原理是
 
-$ a*b \mod n = a*b- \lfloor \frac {a*b} n \rfloor*n $
+\[ a*b \mod n = a*b- \lfloor \frac {a*b} n \rfloor*n \]
 
 观察代码，在计算$\lfloor \frac {a*b} n \rfloor $时采用的方法是计算$ (a/n)*b $再取整，`long double`类型精度有18位，基本没有问题。
 
