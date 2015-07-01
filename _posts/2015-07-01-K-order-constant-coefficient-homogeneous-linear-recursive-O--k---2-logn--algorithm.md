@@ -9,9 +9,11 @@ categories: 递推
 *参考论文：郭晓旭，杨宽.「[线性递推关系与矩阵乘法](http://wenku.baidu.com/view/bac23be1c8d376eeafaa3111.html)」*
 
 所谓k阶常系数齐次线性递推，既有
+
 $$ h_n=c_1h_{n-1}+a_2h_{n-2}+ \cdots + a_k h_{n-k},\forall n\gt k $$
 
 `O(k^3logn)`的矩阵乘法优化做法不再赘述。用其转移矩阵
+
 $$  \mathbf{M}=
 \begin{bmatrix}
 a_1 & a_2 & a_3 & \cdots & a_{k-2} & a_{k-1} & a_{k} \\
@@ -25,6 +27,7 @@ a_1 & a_2 & a_3 & \cdots & a_{k-2} & a_{k-1} & a_{k} \\
 $$
 
 其特征多项式
+
 $$ 
 \begin{align}
 f(\lambda)=|\lambda \mathbf{E} - \mathbf{M}| & =
@@ -42,13 +45,18 @@ f(\lambda)=|\lambda \mathbf{E} - \mathbf{M}| & =
 $$
 
 注意到有
+
 $$ f(\mathbf{M})=0 $$
 
 下面要将任意$$\mathbf{M}^{i}$$表示为$$\mathbf{E},\mathbf{M}^{1},\mathbf{M}^{2},\ldots,\mathbf{M}^{k-1}$$的线性组合，设其为$$g(i)(\mathbf{M})$$
 
-首先$$\forall 0 \leq i \leq k-1, g(i)(\mathbf{M})=\mathbf{M}^{i} $$
+首先
 
-否则我们可以先令$$g_0(\mathbf{M})=g(j)(\mathbf{M}) \times g(i-j)(\mathbf{M}),1\leq j \lt i$$
+$$\forall 0 \leq i \leq k-1, g(i)(\mathbf{M})=\mathbf{M}^{i} $$
+
+否则我们可以先令
+
+$$g_0(\mathbf{M})=g(j)(\mathbf{M}) \times g(i-j)(\mathbf{M}),1\leq j \lt i$$
 
 此时得到的$$g_o(\mathbf{M})$$是一个$$2k-2$$次多项式。
 
@@ -61,6 +69,7 @@ $$ \mathbf{M}^{i+k} = \sum_{j=1}^{k} a_j\mathbf{M}^{i+k-j}$$
 每次求解`g(n)`时，取`j=n/2`即可递归进行。单次求解多项式乘法与降维都可以在`O(k^2)`的时间解决，总复杂度`O(k^2logn)`
 
 设
+
 $$  \mathbf{F_{0}} =
 \begin{bmatrix}
 h_k\\
@@ -71,11 +80,13 @@ h_1\\
 $$
 
 则
+
 $$
 \mathbf{F} = \mathbf{M}^{n-k}\times\mathbf{F_{0}}=\sum_{i=0}^{k-1}b_i\mathbf{M}^i\mathbf{F_{0}}
 $$
 
 所以
+
 $$
 h_n=\sum_{i=0}^{k-1}b_i*h_{k+i}
 $$
