@@ -58,7 +58,7 @@ $$\forall 0 \leq i \leq k-1, g(i)(\mathbf{M})=\mathbf{M}^{i} $$
 
 $$g_0(\mathbf{M})=g(j)(\mathbf{M}) \times g(i-j)(\mathbf{M}),1\leq j \lt i$$
 
-此时得到的$$g_o(\mathbf{M})$$是一个$$2k-2$$次多项式。
+此时得到的$$g_0(\mathbf{M})$$是一个$$2k-2$$次多项式。
 
 由之前的$$f(\mathbf{M})=0$$可以得到$$\mathbf{M}^{i}f(\mathbf{M})=0$$，展开之后有
 
