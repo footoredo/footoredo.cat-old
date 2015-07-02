@@ -10,7 +10,7 @@ categories: 递推
 
 所谓k阶常系数齐次线性递推，既有
 
-$$ h_n=c_1h_{n-1}+a_2h_{n-2}+ \cdots + a_k h_{n-k},\forall n\gt k $$
+$$ h_n=a_1h_{n-1}+a_2h_{n-2}+ \cdots + a_k h_{n-k},\forall n\gt k $$
 
 `O(k^3logn)`的矩阵乘法优化做法不再赘述。用其转移矩阵
 
