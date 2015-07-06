@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [BZOJ 4161 & 4162] Shlw loves matrix I && II 题解
+title: "[BZOJ 4161 & 4162] Shlw loves matrix I && II 题解"
 date: 2015-07-06 07:56
 comments: true
 categories: bzoj
