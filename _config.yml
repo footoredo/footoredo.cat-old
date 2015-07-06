@@ -23,6 +23,10 @@ description:
 cover: http://footoredorandom.sinaapp.com/KQkIceXM
 feed: /atom.xml
 
+links:
+  - text: Kyeremal
+    url: http://kyeremal.com
+
 #菜单配置
 nav:
   - text: 首页

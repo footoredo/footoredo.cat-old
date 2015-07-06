@@ -4,7 +4,7 @@ title: 腹痛症
 ---
 <section class="lotus-logo fn-clear">
     <hgroup class="violet-site">
-        <h1><a href="{{ site.url }}" >{{ site.title }}</a></h1>
+        <h1><b><a href="{{ site.url }}" >{{ site.title }}</a></b></h1>
         <!--<h2>{{ site.subTitle }}</h2>-->
     </hgroup><!-- //violet-site -->
 </section>
@@ -15,7 +15,7 @@ title: 腹痛症
     <h3><a href="{{ rpost.url }}" title="{{ rpost.title }}" rel="bookmark">{{ rpost.title }}</a></h3>
     <p itemprop="description">{{ rpost.description }}</p>
 {% endfor %}-->
-    <div style="width:500px;margin-left:auto;margin-right:auto;">
+    <div style="width:500px;margin-left:auto;margin-right:auto;margin-bottom:80px">
     <img src="{{ site.cover }}" width="100%" align="middle"/>
     </div>
 </article>
@@ -32,18 +32,18 @@ title: 腹痛症
             {% endfor %}
         </ul>
     </article>
-    <!--<article class="article article-last">
-    <h3>相关页面</h3>
+    <article class="article article-last">
+    <h3>Links</h3>
     <ul>
         <li>
-            {% for page in site.page %}
-            <a href="{{ page.url }}" rel="bookmark" title="{{page.text}}">{{ page.text }}</a>
-            {% if !page.last %}
+            {% for link in site.links %}
+            <a href="{{ link.url }}" title="{{link.text}}">{{ link.text }}</a>
+            {% if !link.last %}
                 <span class="lotus-squ">|</span>
             {% endif %}
             {% endfor %}
         </li>
     </ul>
-    </article>-->
+    </article>
 </section>
 </div>
