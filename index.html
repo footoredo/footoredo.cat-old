@@ -25,9 +25,9 @@ title: 腹痛症
         <ul>
             {% for npost in site.posts limit:5 offset:0   %}
                 {% if npost.categories contains 'sage' %}
-                    <li><font color='grey'><s><time datatime="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}</time>{{ npost.title }}<i>[SAGE]</i></s></font></li>
+                    <li><font color='grey'><s><time datatime="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}</time>: {{ npost.title }}<i>[SAGE]</i></s></font></li>
                 {% else %}
-                    <li><time datatime="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}</time><a href="{{ npost.url }}" pubdate="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}" title="{{ npost.title }}" rel="bookmark">{{ npost.title }}</a></li>
+                    <li><time datatime="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}</time>: <a href="{{ npost.url }}" pubdate="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}" title="{{ npost.title }}" rel="bookmark">{{ npost.title }}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
