@@ -503,7 +503,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 .lotus h4, .lotus-h4 { font-size: 1.2em; }
 .lotus h5, .lotus h6, .lotus-h5, .lotus-h6 { font-size: 1em; }
 .lotus .lotus-break { line-height:  18px; font-size: 14px; font-style: italic; font-weight: 400; border-bottom: 1px dotted #e8e8e8; color: #898989; }
-.lotus .lotus-pagetit { font-size: 99px; /*padding-bottom: 0.5em; margin-bottom: 0.5em; border-bottom: 1px solid #C5C5C5; */}
+.lotus .lotus-pagetit { font-size: 30px; /*padding-bottom: 0.5em; margin-bottom: 0.5em; border-bottom: 1px solid #C5C5C5; */}
 .lotus .lotus-tagline { color: #888; font-size: 13px; margin: 0 0 1.2em; font-weight: 400; }
 .lotus .lotus-tagline .lotus-tagline-catg { margin-left: 1em; }
 .lotus ul, .lotus-ul { margin-left: 1.3em; list-style: disc; }
