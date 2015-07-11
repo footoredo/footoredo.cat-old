@@ -15,6 +15,9 @@ plugins: ./_plugins
 paginate: 8
 permalink: /:title
 
+gems:
+  - jekyll-sitemap
+
 safe: false
 
 #站点基础配置
