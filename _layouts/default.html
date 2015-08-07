@@ -12,6 +12,7 @@
      **
     -->
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title class="SansGBW3">
         {% if page.title %}
             {{ page.title }}
@@ -24,13 +25,13 @@
     <meta name="description" content="{{ page.description }}" />
     <meta name="keywords" content="{{ page.keywords | join: ',' }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/static/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/static/style.css" />
 <!--    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/static/pygments.css" />-->
-    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/static/syntax.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/static/syntax.css" />
     <!--[if lt IE 9]>
     <script src="{{ site.url }}/static/js/html5.js" type="text/javascript"></script>
     <![endif]-->
-    <script src="{{ site.url }}/static/js/jquery.js" type="text/javascript"></script>
+    <script src="/static/js/jquery.js" type="text/javascript"></script>
 
 <!-- mathjax -->
 <!-- <script type="text/x-mathjax-config">
@@ -81,8 +82,8 @@ MathJax.Hub.Config({
 <footer class="lotus-footer">
 	<p>Copyright © 2010–2014 {{ site.title }} All rights reserved. Design by <a href="http://www.zhanxin.info" target="_blank">zhanxin</a>.</p>
 </footer>
-<script src="{{ site.url }}/static/js/jquery.scrollTo.js" type="text/javascript"></script>
-<script src="{{ site.url }}/static/js/iLotus.js" type="text/javascript"></script>
+<script src="/static/js/jquery.scrollTo.js" type="text/javascript"></script>
+<script src="/static/js/iLotus.js" type="text/javascript"></script>
 </body>
 <script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.min.js"></script> <script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script> <script type="text/javascript"> function youziku46615() { var resultStr = $(".SansGBW3").text(); var md5 = ""; resultStr = Trim(resultStr); resultStr = SelectWord(resultStr); md5 = $.md5("9580493af1734162967f042c33324e9f"+"SansGBW3" + resultStr); $.getJSON("http://www.youziku.com/webfont/CSSPOST?jsoncallback=?", { "id": md5, "guid": "9580493af1734162967f042c33324e9f", "type": "5" }, function (json) { if (json.result == 0) {//alert("需要生成"); $.post("http://www.youziku.com/webfont/PostCorsCreateFont", { "name": "SansGBW3", "gid": "9580493af1734162967f042c33324e9f", "type": "5", "text": resultStr }, function (json) { if (json == "0") { //alert("参数不对"); } else if (json == "2") {//alert("超过每日生成字体数的上限"); } else if (json == "3") { //alert("当前正在生成请稍后"); } else {//alert("正在生成"); } }); } else {//alert("下载css文件"); loadExtentFile("http://www.youziku.com/webfont/css?id=" + md5 + "&guid=" + "9580493af1734162967f042c33324e9f" + "&type=5"); } }); } (function youziku() { if (window.location.href.toString().substring(0, 7) == "file://") { alert("你当前是通过双击打开html文件，进行本地测试的，这样看不到字体效果，一定要通过本地建立的虚拟网站或发布到外网进行测试。详见有字库的使用说明。"); }else{ youziku46615(); } })() </script>
 </html>
