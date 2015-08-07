@@ -563,7 +563,6 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 	/*border-bottom: 1px solid #d0d0d0;*/
 }
 .lotus-article {
-  width: 720px;
 	margin: 2em 0 2em 0;
 	border-bottom: 1px dotted #c8c8c8;
 }
@@ -839,7 +838,7 @@ blockquote {
 /*************************
  * iPad
 *************************/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 	.lotus {
 		width: 600px;
 	}
@@ -847,10 +846,10 @@ blockquote {
 /*************************
  * iPhone
 *************************/
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 	.lotus table th, .lotus table td, .lotus-table th, .lotus-table td { padding: 2px 0; text-align: center; vertical-align: middle; }
 	.lotus {
-		width: 90%;
+		width: auto;
 		padding: 7em 5% 0 5%;
 		position: relative;
 	}
@@ -873,6 +872,9 @@ blockquote {
 	.lotus-nav ul { width: 320px; margin: 0 auto; }
 	.lotus-nav ul li { float: left; width: 60px; line-height: 42px; border-top: 0; }
 	.lotus-nav ul .home { margin-bottom: 0 ;}
+	.violet-site h1, .violet-site h1 a {
+	  font-size: 80px;
+	}
 	.lotus-double .article-first {
 		width: 100%;
 		border-right: none;
