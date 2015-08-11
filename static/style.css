@@ -796,9 +796,9 @@ html { color: #080808; background: #FEFEFE; }
 .lotus-nav ul .home { border-top: 0; }
 .lotus-nav ul li a { color: #c5c5bb; }
 .lotus-nav ul li a:hover, .lotus-nav ul .current a {
-    background: #CD0001;
+    background: #FEEF6E;
     color: #FEFEFE;
-    box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.6) inset;
+    box-shadow: 1px 1px 24px rgba(64, 168, 35, 0.6) inset;
     -moz-transition:  box-shadow .3s linear, background .3s linear, color .3s linear;
     -webkit-transition: box-shadow .3s linear, background .3s linear, color .3s linear;
     transition: box-shadow .3s linear, background .3s linear, color .3s linear;
