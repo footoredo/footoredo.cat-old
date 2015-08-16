@@ -3,7 +3,7 @@ layout: post
 title: Cryptography I Week 2 Notes
 date: 2015-08-16 20:41
 comments: true
-categories: "Cryptography I","coursera"
+categories: 
 ---
 
 ## PRPs and PRFs (and PRGs)
