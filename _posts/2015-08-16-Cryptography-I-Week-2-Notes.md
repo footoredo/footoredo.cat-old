@@ -52,7 +52,7 @@ categories:
 
 ## Build PRF from PRG: The GGM PRF
 - $$G:K \to K^2$$
-- Suppose $$G:k\to G(k)[0] || G(k)[1]$$
+- Suppose $$G:k\to G(k)[0] \| G(k)[1]$$
 - Define $$F:\{0,1\}^n \times K \to K$$
 - ![The GGM PRF](http://7xk6q5.com1.z0.glb.clouddn.com/GGM%20PRF.png)
 - $$G$$ is a secure PRG $$\Rightarrow$$ $$F$$ is a secure PRF
