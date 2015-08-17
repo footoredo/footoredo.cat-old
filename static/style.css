@@ -896,6 +896,19 @@ blockquote {
     }
     .lotus-nav ul li { border-top: 0; }
 }
+.lotus-nav {
+  background: transparent;
+      -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;
+}
+.lotus-nav:hover {
+  filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
+}
 /*
  * for print
  */
