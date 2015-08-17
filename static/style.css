@@ -807,18 +807,32 @@ html { color: #080808; background: #FEFEFE; }
 }
 
 @media only screen and (min-width : 1224px) {
-.lotus-nav {
+  .lotus-nav {
       -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -webkit-transform-origin: 50% 0%;
-    -moz-transform-origin: 50% 0%;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;
-}
-.lotus-nav:hover {
-  filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
-}
+      -moz-transition: all 400ms ease;
+      -webkit-transform-origin: 50% 0%;
+      -moz-transform-origin: 50% 0%;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;
+  }
+  .lotus-nav:hover {
+    filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
+  }
+  
+  img {
+      -webkit-transition: all 400ms ease;
+      -moz-transition: all 400ms ease;
+      -webkit-transform-origin: 50% 0%;
+      -moz-transform-origin: 50% 0%;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+  }
+  img:hover {
+      -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  }
 }
 
 a { color: #9C0001; }
@@ -925,6 +939,12 @@ blockquote {
 
 .lotus-nav {
   background: transparent;
+}
+
+img {
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
 }
 
 /**
