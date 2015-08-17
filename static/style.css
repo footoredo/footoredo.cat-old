@@ -821,6 +821,7 @@ html { color: #080808; background: #FEFEFE; }
   }
   
   img {
+      margin: 3%;
       -webkit-transition: all 400ms ease;
       -moz-transition: all 400ms ease;
       -webkit-transform-origin: 50% 0%;
