@@ -547,6 +547,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; font-weight: 700\9; color:#333; }
 	left: 0;
 	top: 0;
 }
+
 .lotus-nav ul { list-style: none; width: 58px; margin: 0 0; border-bottom: 1px solid #313131; }
 .lotus-nav ul li { height: 42px; display: block; font-size: 20px; line-height: 42px; text-align: center; border-top: 1px solid #313131; overflow: hidden; }
 .lotus-nav ul .home { margin-bottom: 3.8em; border-top: 0; }
@@ -804,6 +805,22 @@ html { color: #080808; background: #FEFEFE; }
     transition: box-shadow .3s linear, background .3s linear, color .3s linear;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+
+@media only screen and (min-width : 1224px) {
+.lotus-nav {
+      -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;
+}
+.lotus-nav:hover {
+  filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
+}
+}
+
 a { color: #9C0001; }
 a:hover, a:active { color: #CD0001; }
 blockquote {
@@ -896,19 +913,7 @@ blockquote {
     }
     .lotus-nav ul li { border-top: 0; }
 }
-.lotus-nav {
-  background: transparent;
-      -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -webkit-transform-origin: 50% 0%;
-    -moz-transform-origin: 50% 0%;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;
-}
-.lotus-nav:hover {
-  filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;
-}
+
 /*
  * for print
  */
@@ -917,6 +922,11 @@ blockquote {
         display: none;
     }
 }
+
+.lotus-nav {
+  background: transparent;
+}
+
 /**
  * for post img
  */
