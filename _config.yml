@@ -1,4 +1,5 @@
-﻿markdown: kramdown
+﻿encoding: utf-8
+markdown: kramdown
 #pygments: true
 #highlighter: pygments
 #kramdown:
