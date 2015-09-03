@@ -8,11 +8,11 @@ Author:             展新(pizner@gmail.com)
 *************************/
 @font-face {
     font-family: 'inconsolata';
-    src: url('font/inconsolata-webfont.eot');
-    src: url('font/inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
-    url('font/inconsolata-webfont.woff') format('woff'),
-    url('font/inconsolata-webfont.ttf') format('truetype'),
-    url('font/inconsolata-webfont.svg#inconsolata') format('svg');
+    src: url('font/inconsolata-regular-webfont.eot');
+    src: url('font/inconsolata-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/inconsolata-regular-webfont.woff') format('woff'),
+    url('font/inconsolata-regular-webfont.ttf') format('truetype'),
+    url('font/inconsolata-regular-webfont.svg#inconsolataregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -51,7 +51,7 @@ body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset,
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 audio, canvas, video { display: inline-block;  }
 body, button, input, select, textarea { font: 500 14px/1.8 'PT Serif', "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei", sans-serif; 
-font-family:'Inconsolata'}
+font-family:'inconsolata'}
 table { border-collapse: collapse; border-spacing: 0; width: 100%; }
 th { text-align: inherit; }
 fieldset, img { border: 0; }
