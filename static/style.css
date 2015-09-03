@@ -7,6 +7,16 @@ Author:             展新(pizner@gmail.com)
  * style font
 *************************/
 @font-face {
+    font-family: 'inconsolata';
+    src: url('font/inconsolata-webfont.eot');
+    src: url('font/inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/inconsolata-webfont.woff') format('woff'),
+    url('font/inconsolata-webfont.ttf') format('truetype'),
+    url('font/inconsolata-webfont.svg#inconsolata') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;

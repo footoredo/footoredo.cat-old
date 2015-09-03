@@ -8,3 +8,4 @@ node_modules
 .ruby-version
 *~
 nohup.out
+Gemfile.lock
