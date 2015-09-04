@@ -1,16 +1,16 @@
 ﻿encoding: utf-8
 markdown: kramdown
-#pygments: true
-#highlighter: pygments
+pygments: true
+highlighter: pygments
 #kramdown:
 #  input: GFM
 #  auto_ids: true
 #  auto_id_prefix: 'id-'
-kramdown:
-  use_coderay: true
-  coderay:
-    coderay_line_numbers: table
-    coderay_css: class
+#kramdown:
+#  use_coderay: true
+#  coderay:
+#    coderay_line_numbers: table
+#    coderay_css: class
 
 plugins: ./_plugins
 paginate: 8
