@@ -30,16 +30,16 @@ categories:
 - A random function in $$Perms[X]$$ is indistinguishable from a random function in $$S_E$$
 
 ## Feistel Network
-- ![Feitel Network](http://7xk6q5.com1.z0.glb.clouddn.com/Feistel%20Network.png)
+- ![Feitel Network](https://dn-footoredo.qbox.me/Feistel%20Network.png)
 - **Invertible**
 - **"Thm"** *(Luby-Rackoff 85):*
   - A secure PRF $$f:K \times \{0,1\}^n \to \{0,1\}^n$$
   - $$\Rightarrow$$ 3-Round Feistel $$F:K^3 \times \{0,1\}^{2n} \to \{0,1\}^{2n}$$ is a secure PRP
 
 ## DES
-- ![16 Round Feistel network](http://7xk6q5.com1.z0.glb.clouddn.com/DES%2016%20round%20Feistel%20network.png)
-- ![F(k_i,x)](http://7xk6q5.com1.z0.glb.clouddn.com/DES%20F(k_i,x).png)
-- ![S-Boxes](http://7xk6q5.com1.z0.glb.clouddn.com/DES%20S-boxes.png)
+- ![16 Round Feistel network](https://dn-footoredo.qbox.me/DES%2016%20round%20Feistel%20network.png)
+- ![F(k_i,x)](https://dn-footoredo.qbox.me/DES%20F(k_i,x).png)
+- ![S-Boxes](https://dn-footoredo.qbox.me/DES%20S-boxes.png)
   - No output bit should be close to a linear func. of the input bits
 
 ## Triple-DES
@@ -47,12 +47,12 @@ categories:
 - \\(3E(k_1,k_2,k_3,m):=E(k_1,D(k_2,E(k_3,m)))\\)
 
 ## AES
-- ![AES is a Subs-Perm net work](http://7xk6q5.com1.z0.glb.clouddn.com/AES%20is%20a%20Subs-Perm%20net%20work.png)
-- ![The round function](http://7xk6q5.com1.z0.glb.clouddn.com/AES%20round%20function.png)
+- ![AES is a Subs-Perm net work](https://dn-footoredo.qbox.me/AES%20is%20a%20Subs-Perm%20net%20work.png)
+- ![The round function](https://dn-footoredo.qbox.me/AES%20round%20function.png)
 
 ## Build PRF from PRG: The GGM PRF
 - \\(G:K \to K^2\\)
 - Suppose $$G:k\to G(k)[0] \| G(k)[1]$$
 - Define $$F:\{0,1\}^n \times K \to K$$
-- ![The GGM PRF](http://7xk6q5.com1.z0.glb.clouddn.com/GGM%20PRF.png)
+- ![The GGM PRF](https://dn-footoredo.qbox.me/GGM%20PRF.png)
 - $$G$$ is a secure PRG $$\Rightarrow$$ $$F$$ is a secure PRF

@@ -24,12 +24,12 @@ safe: false
 #站点基础配置
 title: 腹痛症
 description:
-cover: http://footoredorandom.sinaapp.com/KQkIceXM
-background: http://7xk6q5.com1.z0.glb.clouddn.com/background_52316949_p0_master1200.jpg
+cover: https://footoredorandom.sinaapp.com/KQkIceXM
+background: https://dn-footoredo.qbox.me/background_52316949_p0_master1200.jpg
 feed: /atom.xml
 name: 腹痛症
 description: footoredo's blog
-url: http://footoredo.in
+url: http://footoredo.cat
 
 links:
   - text: Kyeremal

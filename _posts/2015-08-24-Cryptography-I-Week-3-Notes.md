@@ -13,13 +13,13 @@ categories:
   - \\(V:K \times T \to \text{yes or no}\\)
 
 ##Secure MACs
-- ![Secure MACs](http://7xk6q5.com1.z0.glb.clouddn.com/Seure%20MACs.png)
+- ![Secure MACs](https://dn-footoredo.qbox.me/Seure%20MACs.png)
 - **Thm:** If \\( F: K \times X \to Y \\) is a secure PRF and \\( 1/\|Y\| \\) is "negligible" , then \\( I_F \\) is a secure MAC.
 
 ##Constructions
-- ![encrypted CBC-MAC](http://7xk6q5.com1.z0.glb.clouddn.com/encrypted%20CBC-MAC.png)
-- ![nested MAC](http://7xk6q5.com1.z0.glb.clouddn.com/nested%20MAC.png)
-- ![parallel MAC](http://7xk6q5.com1.z0.glb.clouddn.com/parallel%20MAC.png)
+- ![encrypted CBC-MAC](https://dn-footoredo.qbox.me/encrypted%20CBC-MAC.png)
+- ![nested MAC](https://dn-footoredo.qbox.me/nested%20MAC.png)
+- ![parallel MAC](https://dn-footoredo.qbox.me/parallel%20MAC.png)
 
 ##Carter­‐Wegman MAC
 - One-time MAC \\( \Rightarrow \\) Many-time MAC
