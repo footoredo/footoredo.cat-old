@@ -10,3 +10,4 @@ node_modules
 nohup.out
 Gemfile.lock
 footoredo.cat.html
+robots.txt
