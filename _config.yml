@@ -47,6 +47,10 @@ nav:
     url: /archives.html
     icon: icon-reorder
     class: none
+  - text: 视频 
+    url: /video.html
+    icon: fa-camera-retro
+    class: none
   - text: 关于我
     url: /about.html
     icon: icon-lemon
