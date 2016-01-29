@@ -1,0 +1,33 @@
+.image-cover {
+  position:absolute;
+  z-index: 99999;
+  border-bottom: none;
+  background-color: black;
+  opacity: 0;
+}
+
+img {
+  z-index: 99998;
+}
+
+.mouseover {
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.hugecover {
+  z-index: 1;
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.hugecover-on {
+  opacity: 0.2;
+}
+

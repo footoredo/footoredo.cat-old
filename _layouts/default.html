@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html id="J-html" class="" style="background-image:url('{{ site.background }}')">
 <head>
-
 <!-- player skin -->
 <link rel="stylesheet" href="/static/flowplayer/skin/functional.css">
-
+<link rel="stylesheet" href="/static/image-cover.css">
 <!-- for video tag based installs flowplayer depends on jQuery 1.7.2+ -->
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
 <!-- include flowplayer -->
 <script src="/static/flowplayer/flowplayer.min.js"></script>
-
 <script>
 flowplayer(function (api, root) {
   // at initializiation
   // - remove fullscreen button
   // - add fullscreen button to controlbar
- 
   var fsbutton = document.createElement("a"),
       anchors = root.getElementsByTagName("a"),
       divs = root.getElementsByTagName("div"),
       i, elem;
- 
   fsbutton.className = "fp-fullscreen";
- 
   for (i = 0; i < anchors.length; i += 1) {
       elem = anchors[i];
       if (elem.className == "fp-fullscreen") {
@@ -31,7 +25,6 @@ flowplayer(function (api, root) {
           break;
       }
   }
- 
   for (i = 0; i < divs.length; i += 1) {
       elem = divs[i];
       if (elem.className == "fp-controls") {
@@ -41,48 +34,39 @@ flowplayer(function (api, root) {
   }
 });
 </script>
+<script type="text/javascript">window.bd && bd._qdc && bd._qdc.init({app_id: '93c582e1b16b154135c81c5f'});</script>
 
-
-<!--<script type="text/javascript" name="baidu-tc-cerfication" src="http://apps.bdimg.com/cloudaapi/lightapp.js#f22aff03cb8715a440f5754bc289de0e"></script>--> <script type="text/javascript">window.bd && bd._qdc && bd._qdc.init({app_id: '93c582e1b16b154135c81c5f'});</script>
-
-     <!--
-     **
-     * Author:         掌心
-     * Contact:        zhanxin.info@gmail.com
-     * Theme Name:     iLotus
-     **
-    -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title class="SansGBW3">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>
         {% if page.title %}
-            {{ page.title }}
+            {{ site.title }}x「{{ page.title }}」
         {% else %}
             {{ site.title }}
         {% endif %}
-    </title>
-    <meta name="generator" content="Jekyll" />
-    <meta name="author" content="{{ site.author.name }}" />
-    <meta name="description" content="{{ page.description }}" />
-    <meta name="keywords" content="{{ page.keywords | join: ',' }}" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="all" href="/static/style.css" />
+</title>
+<meta name="generator" content="Jekyll"/>
+<meta name="author" content="{{ site.author.name }}"/>
+<meta name="description" content="{{ page.description }}"/>
+<meta name="keywords" content="{{ page.keywords | join: ',' }}"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" media="all" href="/static/style.css"/>
 <!--    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/static/pygments.css" />-->
-    <link rel="stylesheet" type="text/css" media="all" href="/static/syntax.css" />
-    <!--[if lt IE 9]>
-    <script src="{{ site.url }}/static/js/html5.js" type="text/javascript"></script>
-    <![endif]-->
-    <script src="/static/js/jquery.js" type="text/javascript"></script>
-
+<link rel="stylesheet" type="text/css" media="all" href="/static/syntax.css"/>
+<!--[if lt IE 9]>
+<script src="{{ site.url }}/static/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/static/js/jquery.js" type="text/javascript"></script>
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<meta name="google-site-verification" content="-hLWt99PVRKwp6cE4vbarH2mn5SbF86GqDSnnfjrIII" />
-<meta name="google-site-verification" content="2zgJhOCBpVraqFqHHj_qSiJ090Ovpu8CtxDixOptV_c" />
-
+<script type="text/javascript" src="/static/image-cover.js"></script>
+<meta name="google-site-verification" content="-hLWt99PVRKwp6cE4vbarH2mn5SbF86GqDSnnfjrIII"/>
+<meta name="google-site-verification" content="2zgJhOCBpVraqFqHHj_qSiJ090Ovpu8CtxDixOptV_c"/>
 </head>
-<body style="padding-left:5%;padding-right:5%" itemscope itemtype="http://schema.org/WebPage" class="home blog lotus index">
-    <nav class="lotus-nav">
-        <ul>
+
+<body style="background-color:transparent">
+
+<nav class="lotus-nav">
+<ul>
             {% for link in site.nav %}
             {% assign active = nil %}
             {% assign homeClass = nil %}
@@ -92,23 +76,34 @@ flowplayer(function (api, root) {
             {% if link.class == 'home' %}
                 {% assign homeClass = 'home ' %}
             {% endif %}
-            <li class="{{ homeClass }}{{ active }}">
-                <a href="{{ link.url }}" rel="bookmark" title="{{link.text}}">
-                    <i class="{{ link.icon }}"></i>
-                </a>
+	<li class="{{ homeClass }}{{ active }}">
+	<a href="{{ link.url }}" rel="bookmark" title="{{link.text}}">
+	<i class="{{ link.icon }}"></i>
+	</a>
                 {{ indicator }}
-            </li>
+	</li>
             {% endfor %}
-        </ul>
-    </nav>
+</ul>
+</nav>
 
+<div itemscope itemtype="http://schema.org/WebPage" class="home blog lotus index titlebar">
+<section class="lotus-logo fn-clear">
+    <hgroup class="violet-site">
+        <h1><b><a href="/" >{{ site.title }}</a></b></h1>
+    </hgroup><!-- //violet-site -->
+</section>
+</div>
+
+<div itemscope itemtype="http://schema.org/WebPage" class="home blog lotus index container">
     {{ content }}
+    <footer class="lotus-footer">
+      <p>
+	      Copyright © 2010–2015 {{ site.title }} All rights reserved.
+      </p>
+    </footer>
+</div>
 
-<footer class="lotus-footer">
-	<p>Copyright © 2010–2015 {{ site.title }} All rights reserved. Design by <a href="http://www.zhanxin.info" target="_blank">zhanxin</a>.</p>
-</footer>
 <script src="/static/js/jquery.scrollTo.js" type="text/javascript"></script>
 <script src="/static/js/iLotus.js" type="text/javascript"></script>
 </body>
-<!--<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.min.js"></script> <script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script> <script type="text/javascript"> function youziku46615() { var resultStr = $(".SansGBW3").text(); var md5 = ""; resultStr = Trim(resultStr); resultStr = SelectWord(resultStr); md5 = $.md5("9580493af1734162967f042c33324e9f"+"SansGBW3" + resultStr); $.getJSON("http://www.youziku.com/webfont/CSSPOST?jsoncallback=?", { "id": md5, "guid": "9580493af1734162967f042c33324e9f", "type": "5" }, function (json) { if (json.result == 0) {//alert("需要生成"); $.post("http://www.youziku.com/webfont/PostCorsCreateFont", { "name": "SansGBW3", "gid": "9580493af1734162967f042c33324e9f", "type": "5", "text": resultStr }, function (json) { if (json == "0") { //alert("参数不对"); } else if (json == "2") {//alert("超过每日生成字体数的上限"); } else if (json == "3") { //alert("当前正在生成请稍后"); } else {//alert("正在生成"); } }); } else {//alert("下载css文件"); loadExtentFile("http://www.youziku.com/webfont/css?id=" + md5 + "&guid=" + "9580493af1734162967f042c33324e9f" + "&type=5"); } }); } (function youziku() { if (window.location.href.toString().substring(0, 7) == "file://") { alert("你当前是通过双击打开html文件，进行本地测试的，这样看不到字体效果，一定要通过本地建立的虚拟网站或发布到外网进行测试。详见有字库的使用说明。"); }else{ youziku46615(); } })() </script>-->
 </html>

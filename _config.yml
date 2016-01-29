@@ -16,13 +16,10 @@ plugins: ./_plugins
 paginate: 8
 permalink: /:title
 
-gems:
-  - jekyll-sitemap
-
 safe: false
 
 #站点基础配置
-title: 腹痛症
+title: 「腹痛症」
 description:
 cover: https://footoredorandom.sinaapp.com/KQkIceXM
 background: https://dn-footoredo.qbox.me/background_52316949_p0_master1200.jpg
