@@ -1359,7 +1359,7 @@ li[class*=" icon-"].icon-large:before,li[class^=icon-].icon-large:before {
 
 h1,h2,h3,h4,h5,h6 {
 	color: #333;
-	font-weight: 500;
+	font-weight: bold;
 }
 
 .lotus h1,.lotus-h1 {
@@ -1498,7 +1498,7 @@ h1,h2,h3,h4,h5,h6 {
 .lotus {
 	margin: 0 auto;
 	padding: 1em 0 0 0;
-	width: 720px;
+	width: 57%;
 }
 
 .index {
@@ -1957,7 +1957,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .violet-site h1,.violet-site h1 a {
-	font-size: 70px;
+	font-size: 250%;
 	text-decoration: none;
 	font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑","WenQuanYi Micro Hei",sans-serif;
 }
