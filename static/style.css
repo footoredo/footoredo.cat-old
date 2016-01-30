@@ -1963,7 +1963,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .violet-site h1 a:hover {
-  color: #FEEF6E;
+  color: #32323e;
   border-bottom: none;
 }
 
@@ -2390,5 +2390,3 @@ html {
   background-color: #46388A;
   color: #FEFEFE;
 }
-
-
