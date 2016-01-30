@@ -1,0 +1,13 @@
+.marker {
+  color: #333;
+  position: absolute;
+  font-weight: bold;
+  transition: color .2s;
+  -o-transition: color .2s;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+}
+
+.marker:hover {
+  color: #6441a5
+}

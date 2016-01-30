@@ -1,4 +1,5 @@
-﻿@charset "utf-8";
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@charset "utf-8";
 
 @font-face {
 	font-weight:400;font-style:normal;font-family:inconsolata;src:url(font/inconsolata-regular-webfont.eot);src:url(font/inconsolata-regular-webfont.eot?#iefix) format('embedded-opentype'),url(font/inconsolata-regular-webfont.woff) format('woff'),url(font/inconsolata-regular-webfont.ttf) format('truetype'),url(font/inconsolata-regular-webfont.svg#inconsolataregular) format('svg');
@@ -45,7 +46,7 @@ audio,canvas,video {
 }
 
 body,button,input,select,textarea {
-	font: 500 14px/1.8 inconsolata,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑","WenQuanYi Micro Hei",sans-serif;
+    font: 400 14px/1.8 "Open Sans","Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑","WenQuanYi Micro Hei",sans-serif;
 }
 
 table {
@@ -199,9 +200,7 @@ pre {
 	display: block;
 	margin: 0 0 10px;
 	padding: 9.5px;
-	border-radius: 4px;
-	background-color: #483C32;
-	color: #f0f0f0;
+	background-color: #E4E4E4;
 	word-wrap: break-word;
 	font-size: 13px;
 	line-height: 1.42857143;
@@ -1371,13 +1370,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .lotus h3,.lotus-h3 {
-	margin-top: 1.4em;
-	border-bottom: 1px dotted #d8d8d8;
 	font-size: 1.4em;
-}
-
-.index h3 {
-	margin-top: 0;
 }
 
 .lotus h4,.lotus-h4 {
@@ -1385,7 +1378,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .lotus h5,.lotus h6,.lotus-h5,.lotus-h6 {
-	font-size: 1em;
+	font-size: 1.0em;
 }
 
 .lotus .lotus-break {
@@ -1958,13 +1951,12 @@ h1,h2,h3,h4,h5,h6 {
 
 .violet-site h1,.violet-site h1 a {
 	font-size: 250%;
-	text-decoration: none;
+	border-bottom: none;
 	font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑","WenQuanYi Micro Hei",sans-serif;
 }
 
 .violet-site h1 a:hover {
   color: #6441a5;
-  border-bottom: none;
 }
 
 .violet-site h1 span {
@@ -2154,10 +2146,6 @@ blockquote {
 
 	.lotus-nav ul .home {
 		margin-bottom: 0;
-	}
-
-	.violet-site h1,.violet-site h1 a {
-		font-size: 80px;
 	}
 
 	.lotus-double .article-first {
