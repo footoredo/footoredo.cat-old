@@ -6,7 +6,7 @@ var sync_cover = function(cover, image) {
   return cover;
 }
 
-window.onload = function() {
+window.addEventListener("load", function() {
   $("img").each(function() {
     var cover = document.createElement("a"), image = $(this);
     cover.setAttribute("class", "image-cover");
@@ -37,4 +37,4 @@ window.onload = function() {
   window.onscroll = function() {
     $(".hugecover").offset({left:0,top:document.body.scrollTop});
   }
-}
+});

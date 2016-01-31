@@ -24,9 +24,10 @@ var sync_marker = function(marker, combine) {
   return marker;
 }
 
-window.onload = function() {
+window.addEventListener("load", function() {
   $(".blog").find("*:not(:has(*))").each(function() {
-    $(this).text(process($(this).text()));
+    if ($(this).text())
+      $(this).text(process($(this).text()));
   });
   
   $("h2,h3").each(function() {
@@ -42,4 +43,4 @@ window.onload = function() {
       })
     });
   });
-};
+});
