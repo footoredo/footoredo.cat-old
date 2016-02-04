@@ -6,7 +6,7 @@ comments: true
 categories: bzoj
 ---
 
-4161题解[见此](http://footoredo.in/K-order-constant-coefficient-homogeneous-linear-recursive-O--k---2-logn--algorithm/)。
+4161题解[见此](http://footoredo.cat/K-order-constant-coefficient-homogeneous-linear-recursive-O--k---2-logn--algorithm/)。
 
 *4162解法较无脑，建议不得已之下再查看题解*
 
