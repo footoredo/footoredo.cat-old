@@ -48,10 +48,6 @@ nav:
     url: /archives
     icon: icon-reorder
     class: none
-  - text: 视频 
-    url: /video
-    icon: icon-play-circle
-    class: none
   - text: 关于我
     url: /about
     icon: icon-lemon
